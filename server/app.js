@@ -4,13 +4,13 @@ const cors        = require("cors");
 const compression = require("compression");
 const helmet      = require("helmet");
 
-//const connectDB = require("./config/db.config")
+const connectDB = require("./config/db.config");
 
 // access to vars in .env...
-//require("dotenv").config();
+require("dotenv").config();
 
 // database connection...
-//connectDB();
+connectDB();
 
 const app = express();
 
